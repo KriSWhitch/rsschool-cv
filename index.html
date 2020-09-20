@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>RSSchool</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="utf-8">
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      li::marker{
+         margin-right: 10px;
+      }
+
+      ul li {
+         margin-bottom: 10px;
+      }
+
+      h2 {
+         margin-bottom: 30px;
+      }
+
+      .wrapper {
+         max-width: 1024px;
+         margin: auto;
+      }
+
+      .main {
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+      }
+
+      .first-section {
+         display: flex;
+         margin: 20px 0 30px 0;
+      }
+
+      .personal-info-content {
+         display: flex;
+      }
+
+      .personal-info {
+         display: block;
+         margin-right: 70px;
+      }
+
+      .personal-info-content {
+         justify-content: center;
+         align-items: center;
+      }
+
+      .personal-info-content li {
+         margin-right: 50px;
+         margin-bottom: 35px;
+         list-style-type: none;
+      }
+
+      .personal-photo {
+         display: block;
+         width: 200px;
+         height: 200px;
+         border-radius: 50%;
+         object-fit: cover;
+         -webkit-box-shadow:0 0 20px rgb(228, 240, 61);
+         box-shadow:0 0 20px rgb(228, 240, 61);
+         margin-bottom: 20px;
+      }
+
+      .skills ul li {
+         margin: 30px 0 30px 0;
+      }
+
+      .about-me {
+         margin-bottom: 30px;
+      }
+
+      .work-experience {
+         margin-bottom: 30px;
+      }
+
+      .second-section {
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 30px;
+      }
+
+   </style>
+ </head>
+ <body>
+   <div class="wrapper">
+      <section class="main">
+            <div class="first-section">
+               <div class="personal-info">
+                  <h2>Контактные данные</h2>
+                  <div class="personal-info-content">
+                     <div class="personal-group">
+                        <img src="img/me.jpg" alt="Photo" title="Photo" class="personal-photo">
+                        <p class="personal-fcs">Муковозчик Алексей Витальевич</p>
+                     </div>
+
+                     <ul>
+                        <li>e-mail: krisfragerfeed@gmail.com</li>
+                        <li>+375 (29) 379-72-94</li>
+                        <li><a href="https://www.linkedin.com/in/kriswhitch/">LinkedIn</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="skills">
+                  <h2>Навыки</h2>
+                  <ul>
+                     <li>
+                        <p>Языки программирования: JavaScript (main), C++, C#, Apex</p>
+                     </li>
+                     <li>
+                        <p>Git/Github</p>
+                     </li>
+                     <li>
+                        <p>SASS/Bootstrap 4, FlexBox и CSS Grid Layout/JQuery</p>
+                     </li>
+                     <li>
+                        <p>Знание структур данных и сортировок</p>
+                     </li>
+                  </ul>      
+               </div>
+            </div>
+         <div class="about-me">
+            <h2>Обо мне</h2>
+            <p>
+               Являюсь студентом, обучаюсь на IT факультете. Стремлюсь стать веб-разработчиком, и научиться работать с React.
+               Хорошая обучаемость, эффективно работаю в команде и не имею проблем с коммуникацией внутри неё, соблюдаю сроки выполнения задания.
+               Увлекаюсь иностранными языками.
+            </p>   
+         </div>
+         <div class="work-experience">
+            <h2>Опыт работы</h2>
+            <p>
+               Летом 2020-го прошёл первый этап курсов по специальности Salesforce Developer в компании Andersen. Изучил основы платформы Salesforce, язык программирования Apex. Итоговым техническим заданием был небольшой проект по интеграции базы данных через компоненту на платформу, и корректное заполнение данных между связанными элементами таблиц.
+               Ссылка на репозиторий данного проекта: <a href="https://github.com/KriSWhitch/Salesforce-Training/tree/master/ParkingApp">тык</a>
+            </p>   
+         </div>
+         <div class="second-section">
+            <div class="code-examples">
+               <h2>Примеры кода</h2>
+               <ul>
+                  <li><a href="https://github.com/KriSWhitch/odigo-landing">JS | Web</a></li>
+                  <li><a href="https://github.com/KriSWhitch/Salesforce-Training/blob/master/ParkingApp/force-app/main/default/classes/lwnReadCsvFileController.cls">Apex | Salesforce</a></li>
+               </ul>
+            </div>
+            <div class="education">
+               <h2>Образование</h2>
+               <ul>
+                  <li><p>Неполное-высшее по специальности инженер-программист (студент 2-го курса)</p></li>
+                  <li>
+                     <p>Курсы по специальности Salesforce Developer в компании Andersen (1 этап - пройден)</p>
+                  </li>
+                  <li>
+                     <p>Специальность оператора ПЭВМ</p>
+                  </li>
+               </ul>
+           </div>  
+         </div>
+         <div class="foreign-languages">
+            <h2>Иностранные языки</h2>
+            <ul>
+               <li>
+                  <p>Английский B2+</p>
+               </li>
+               <li>
+                  <p>Немецкий A1</p>
+               </li>
+            </ul>   
+        </div>
+      </section>
+   </div>
+ </body> 
+</html>
