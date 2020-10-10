@@ -1,19 +1,38 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Helvetica, sans-serif;
  }
 
- li::marker{
+body {
+    color: rgb(106, 110, 114);
+}
+
+li::marker{
     margin-right: 10px;
- }
+}
 
- ul li {
+ul li {
     margin-bottom: 10px;
- }
+    list-style-type: none;
+}
 
- h2 {
+h2 {
     margin-bottom: 30px;
- }
+    color: rgb(63,63,63);
+    letter-spacing: 2.5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+a {
+    color: rgb(63,63,63);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(118, 123, 128);
+}
 
  .wrapper {
     max-width: 1024px;
@@ -24,7 +43,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    flex-direction: row;
+    border-top: 2px solid  rgb(219,221,224);
+    border-bottom: 2px solid  rgb(219,221,224);
+    margin-bottom: 30px;
  }
 
 /* HEADER SECTION */
@@ -84,52 +106,97 @@
      text-transform: uppercase;
  }
 
-/* SECTION 2 */
+/* LEFT SIDE */
 
-
- .personal-info-content {
+.left-side {
+    width: 47.5%;
+    margin-right: 30px;
     display: flex;
+    flex-direction: column;
+    border-right: 2px solid  rgb(219,221,224);
+    padding: 20px 30px 20px 0;
+}
+
+.left-side div {
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.personal-info-content {
+    display: flex;
+    padding-left: 0 !important; 
  }
 
- .personal-info {
+.personal-info {
     display: block;
-    margin-right: 70px;
+    border-bottom: 2px solid  rgb(219,221,224);
+    height: 240px; 
  }
 
- .personal-info-content {
-    justify-content: center;
-    align-items: center;
+.about-me {
+    height: 250px;
+    border-bottom: 2px solid  rgb(219,221,224);
  }
 
- .personal-info-content li {
-    margin-right: 50px;
-    margin-bottom: 35px;
-    list-style-type: none;
- }
+.about-me p {
+    line-height: 30px;
+}
+
+.code-examples {
+    border-bottom: 2px solid  rgb(219,221,224);
+    height: 130px;
+}
+
+.code-examples ul {
+    list-style: none;
+}
+
+.foreign-languages {
+    margin-bottom: 10px;
+    height: 185px;
+}
+
+.foreign-languages ul {
+    list-style: none;
+}
 
 
- .skills ul li {
-    margin: 30px 0 30px 0;
- }
 
- .about-me {
-    margin-bottom: 30px;
- }
 
- .work-experience {
-    margin-bottom: 30px;
- }
 
- .second-section {
+/* RIGHT SIDE */
+
+.right-side {
+    width: 47.5%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.right-side div {
+    padding-right: 30px;
     margin-bottom: 30px;
+}
+
+.skills {
+    border-bottom: 2px solid  rgb(219,221,224);
+    height: 240px;
+}
+
+.work-experience {
+    border-bottom: 2px solid  rgb(219,221,224);
+    height: 411px;
+}
+
+.work-experience p {
+    line-height: 30px;
+}
+
+ .education {
+     height: 185px;
  }
 
-
- .foreign-languages {
-     margin-bottom: 10px;
- }
+ /* FOOTER */
 
  .footer {
      height: 50px;
