@@ -94,6 +94,7 @@ a:hover {
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 10px;
+    text-align: center;
  }
 
  .fcs-subtitle {
@@ -124,7 +125,8 @@ a:hover {
 
 .personal-info-content {
     display: flex;
-    padding-left: 0 !important; 
+    padding: 0 !important; 
+    margin-bottom: 0 !important;
  }
 
 .personal-info {
@@ -202,4 +204,53 @@ a:hover {
      height: 50px;
      background-color: rgb(219,221,224);
      width: 100%;
+ }
+
+ @media (max-width: 1024px) {
+     .main {
+         flex-direction: column;
+         margin-bottom: 0;
+     }
+
+     .left-side, .right-side {
+         width: 100%;
+         border: none;
+         padding: 0;
+     }
+
+     .left-side div, .right-side div {
+         padding: 30px;
+         margin-bottom: 0;
+     }
+
+     .personal-info, .about-me, .code-examples, .skills, .foreign-languages, .work-experience, .education {
+         height: fit-content;
+     }
+
+     .foreign-languages {
+        border-bottom: 2px solid  rgb(219,221,224);
+     }
+
+     .fcs-title {
+         font-size: 40px;
+     }
+
+     .fcs-subtitle {
+         font-size: 17.5px;
+     }
+ }
+
+ @media (max-width: 500px ) {
+    .personal-fcs {
+        max-width: 100%;
+        padding: 0 5%;
+    }
+
+     .fcs-title {
+         font-size: 30px;
+     }
+
+     .fcs-subtitle {
+         font-size: 16px;
+     }
  }
